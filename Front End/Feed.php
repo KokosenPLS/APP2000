@@ -24,9 +24,16 @@
 						<br>
 						<button type="" id="reg-knapp">Logg inn</button>
 					</form>
-					
-					<div></div>
+					<?php
+					echo "<div class = 'arrangement-div'>";
 
+						while (arrangementObject) {
+							$bilde = row['bilde'];
+							echo "<img src='"$bilde"";
+						}
+
+					echo '</div>';
+					?>
 				</div>
 			</div>
 			<footer class="item5">

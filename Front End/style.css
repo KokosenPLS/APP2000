@@ -9,22 +9,33 @@
 .item1{
   grid-area: header;
   display: flex;
+  flex-flow: row;
   align-items: center;
+  width: 100%;
+  box-shadow: 0px 3px 20px 0px rgb(0 0 0 / 25%);
+  margin-bottom: 25px;
+  box-sizing: border-box;
 }
 .item2{
   grid-area: menu;
 }
 .item3{
   grid-area: main;
+  display: flex;
 }
 .item4{
   grid-area: right;
 }
 .item5{
-  position: absolute;
   bottom: 0;
   width: 100%;
   grid-area: footer;
+}
+
+.item1 h1 {
+  font-family: Jazz LET, fantasy;
+  font-size: 1.5em;
+  width: 33%;
 }
 
 .grid-container{
@@ -107,8 +118,9 @@
   margin: 1%;
 }
 
-#logo-img{
-  margin-left: 44%;
+.item1 > input {
+  border-radius: 5px;
+  padding: 5px;
 }
 
 #regText{
@@ -119,4 +131,137 @@
   background-color: white;
   text-align: center;
   height: 60px;
+}
+
+.arrangement-box {
+  font-size: 18px;
+  background-color: snow;
+  box-shadow: 0px 3px 20px 0px rgb(0 0 0 / 25%);
+  width: 60%;
+  margin-left: 20%;
+  padding-bottom: 15px;
+  margin-bottom: 5%;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.arrangement-box h1 {
+  background-color: palegreen;
+  padding: 10px;
+}
+
+.arrangement-box  p {
+  padding: 5px;   
+}
+
+.arr-tittel {
+  grid-area: tittel;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.arrangement-bilde {
+  grid-area: bilde;
+}
+
+.arrangement-bilde > img {
+  height: 10em;
+}
+
+.arrangement-info {
+  padding: 1%;
+  box-sizing: border-box;
+  grid-area: info;
+  width: 70%;
+}
+.arrangement-info-tekst {
+  margin-top: 10px;
+  border-top: solid 1px lightgrey;
+}
+
+.arrangement-admins {
+  border-left: solid 1px lightgrey;
+  grid-area: admins;
+  box-sizing: border-box;
+  padding: 1%;
+  width: 30%;
+}
+
+.item1 > div {
+  width: 33%;
+  box-sizing: border-box;
+}
+
+.logo{
+}
+
+.search{
+}
+.search input {
+  padding: 7px;
+  width: 60%;
+  border-radius: 5px;
+}
+#button-søk{
+  padding: 7px;
+  width: 20%;
+  border-radius: 10px;
+  background-color: palegreen;
+}
+.profil{
+  text-align: right;
+}
+.profil-info{
+  width: 25%;
+  box-sizing: border-box;
+  padding:10px;
+}
+.profil-bio{
+  padding:10px;
+}
+.profil-venner{
+  padding:10px;
+
+}
+
+.profil-arrangementer{
+  width: 75%;
+  display: flex;
+  flex-flow: row wrap;
+  box-sizing: border-box;
+  
+}
+.item3 > div {
+  margin: 10px;
+}
+
+.profil-bildenavn{
+
+}
+.profil-bildenavn > img{
+  width: 150px;
+  border-radius: 50%;
+}
+.profil-info > div{
+  margin-bottom: 10px;
+  box-shadow: 0px 3px 20px 0px rgb(0 0 0 / 25%);
+  padding: 10px;
+}
+
+.profil-arrangement-box{
+  font-size: 18px;
+  background-color: snow;
+  box-shadow: 0px 3px 20px 0px rgb(0 0 0 / 25%);
+  width: 60%;
+  margin-left: 10%;
+  padding-bottom: 15px;
+  margin-bottom: 5%;
+  margin-top: 10px;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.profil-arrangement-box h1 {
+  background-color: palegreen;
+  padding: 10px;
 }
